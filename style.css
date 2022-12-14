@@ -1,0 +1,245 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: hsl(210, 60%, 98%);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.notification-box {
+	background-color: white;
+	width: 450px;
+	padding: 16px;
+	border-radius: 12px;
+}
+
+.header {
+	display: flex;
+	gap: 8px;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.main-title {
+	font-size: 16px;
+}
+.hm-msg {
+	font-size: 10px;
+	color: white;
+	background-color: hsl(219, 85%, 26%);
+	padding: 2px 7px;
+	border-radius: 4px;
+}
+.all-read {
+	cursor: pointer;
+	font-size: 10px;
+	margin-left: auto;
+	border: none;
+	background-color: unset;
+	color: hsl(219, 12%, 50%);
+	letter-spacing: 0.2px;
+	transition: all 0.2s ease-in;
+}
+
+.all-read:hover {
+	color: hsl(219, 85%, 26%);
+}
+
+.new-notification .text-container .main-line .select:last-child::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0px;
+	right: -8px;
+	bottom: 0;
+	background-color: hsl(1, 90%, 64%);
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	margin: auto 0;
+}
+
+.notification {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+
+	padding: 10px 14px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	transition: all 0.2s ease-in;
+}
+
+.new-notification {
+	background-color: hsl(210, 60%, 98%);
+	transition: all 0.3s ease-in;
+}
+
+.main-line {
+	font-size: 10px;
+	margin-bottom: 2px;
+	position: relative;
+}
+
+/* .text-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+.name {
+	margin-right: 2px;
+	font-size: 10px;
+	display: inline;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+
+.name:hover {
+	color: hsl(219, 85%, 26%);
+}
+
+.link {
+	border: none;
+	background-color: unset;
+	display: inline;
+	position: relative;
+}
+
+.link a:link,
+.link a:visited {
+	font-size: 10.5px;
+	font-weight: 800;
+	color: hsl(219, 12%, 50%);
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+}
+
+.link a:hover,
+.link a:active {
+	color: hsl(219, 85%, 26%);
+}
+
+.main-text {
+	display: inline;
+	/* margin-right: 2px; */
+	color: hsl(219, 12%, 50%);
+}
+.link-club {
+	font-weight: 800;
+	color: hsl(219, 85%, 26%);
+	cursor: pointer;
+	position: relative;
+}
+.time-ago {
+	color: hsl(219, 12%, 75%);
+	font-size: 9px;
+}
+
+.profile-photo {
+	width: 28px;
+	height: 28px;
+}
+
+.message {
+	border-radius: 3px;
+	background-color: white;
+	border: 1px solid hsl(219, 12%, 90%);
+	padding: 12px;
+	font-size: 10px;
+	color: hsl(219, 12%, 50%);
+	margin-top: 8px;
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+
+.message:hover {
+	background-color: hsl(211, 68%, 94%);
+}
+
+.photo {
+	width: 28px;
+	margin-left: auto;
+	border-radius: 5px;
+	border: 2px solid hsla(211, 68%, 94%, 0);
+	cursor: pointer;
+	transition: all 0.2s ease-in;
+}
+
+.photo:hover {
+	border: 2px solid hsl(211, 68%, 94%);
+}
+
+@media (max-width: 500px) {
+	body {
+		height: unset;
+		justify-content: unset;
+		align-items: unset;
+	}
+
+	.notification-box {
+		padding: 22px 16px;
+	}
+
+	.header {
+		margin-bottom: 22px;
+	}
+
+	.main-title {
+		font-size: 20px;
+	}
+	.hm-msg {
+		font-size: 14px;
+		padding: 2px 9px;
+	}
+	.all-read {
+		font-size: 14px;
+	}
+
+	.new-notification .text-container .main-line .select:last-child::after {
+		right: -14px;
+		width: 8px;
+		height: 8px;
+	}
+	.name {
+		font-size: 14px;
+	}
+
+	.link a:link,
+	.link a:visited {
+		font-size: 14px;
+	}
+
+	.main-line {
+		font-size: 15px;
+	}
+
+	.profile-photo {
+		width: 38px;
+		height: 38px;
+	}
+
+	.notification {
+		padding: 16px 14px;
+		margin-bottom: 10px;
+	}
+
+	.time-ago {
+		font-size: 14px;
+	}
+
+	.message {
+		font-size: 15px;
+	}
+
+	.photo {
+		width: 42px;
+	}
+}

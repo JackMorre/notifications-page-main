@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="/style.css"
+		/>
+
+		<title>Frontend Mentor | Notifications page</title>
+	</head>
+	<body>
+		<section class="notification-box">
+			<header class="header">
+				<h1 class="main-title">Notifications</h1>
+				<p class="hm-msg">3</p>
+				<button class="all-read">Mark all as read</button>
+			</header>
+			<div class="notification new-notification">
+				<img
+					src="/assets/images/avatar-mark-webber.webp"
+					alt="man yawning with red hat"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name select">Mark Webber</h3>
+						<p class="main-text select">reacted to your recent post</p>
+						<button class="link select">
+							<a href="#">My first tournament today!</a>
+						</button>
+					</div>
+					<p class="time-ago">1m ago</p>
+				</div>
+			</div>
+			<div class="notification new-notification">
+				<img
+					src="/assets/images/avatar-angela-gray.webp"
+					alt="blond woman with great smile"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name select">Angela Gray</h3>
+						<p class="main-text select">followed you</p>
+					</div>
+					<p class="time-ago select">5m ago</p>
+				</div>
+			</div>
+			<div class="notification new-notification">
+				<img
+					src="/assets/images/avatar-jacob-thompson.webp"
+					alt="man with white top infront of flowers"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name select">Jacob Thompson</h3>
+						<p class="main-text select">has joined your group</p>
+						<a class="link-club select">Chess Club</a>
+					</div>
+					<p class="time-ago">1 day ago</p>
+				</div>
+			</div>
+			<div class="notification">
+				<img
+					src="/assets/images/avatar-rizky-hasanuddin.webp"
+					alt="cool guy with glasses"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name">Rizky Hasanuddin</h3>
+						<p class="main-text">sent you a private message</p>
+					</div>
+					<p class="time-ago">1 day ago</p>
+					<p class="message">
+						Hello, thanks for setting up the Chess Club. I've been a member for
+						a few weeks now and I'm already having lots of fun and improving my
+						game.
+					</p>
+				</div>
+			</div>
+			<div class="notification">
+				<img
+					src="/assets/images/avatar-kimberly-smith.webp"
+					alt="woman behind a tree"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name">Kimberly Smith</h3>
+						<p class="main-text">commented on your picture</p>
+					</div>
+					<p class="time-ago">1 week ago</p>
+				</div>
+				<img
+					class="photo"
+					src="/assets/images/image-chess.webp"
+					alt="cool image"
+				/>
+			</div>
+			<div class="notification">
+				<img
+					src="/assets/images/avatar-nathan-peterson.webp"
+					alt="cool man with yellow jacket"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name">Nathan Peterson</h3>
+						<p class="main-text">reacted to your recent post</p>
+						<span class="link">
+							<a href="#">5 end-game strategies to increase your win rate</a>
+						</span>
+					</div>
+					<p class="time-ago">2 weeks ago</p>
+				</div>
+			</div>
+			<div class="notification">
+				<img
+					src="/assets/images/avatar-anna-kim.webp"
+					alt="woman with headphones on"
+					class="profile-photo"
+				/>
+				<div class="text-container">
+					<div class="main-line">
+						<h3 class="name">Anna Kim</h3>
+						<p class="main-text">left the group</p>
+						<a class="link-club">Chess Club</a>
+					</div>
+					<p class="time-ago">2 weeks ago</p>
+				</div>
+			</div>
+		</section>
+		<script src="/script.js"></script>
+	</body>
+</html>
