@@ -15,8 +15,8 @@ body {
 
 .notification-box {
 	background-color: white;
-	width: 450px;
-	padding: 16px;
+	width: 535px;
+	padding: 24px 22px;
 	border-radius: 12px;
 }
 
@@ -25,22 +25,22 @@ body {
 	gap: 8px;
 	justify-content: start;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .main-title {
-	font-size: 16px;
+	font-size: 17px;
 }
 .hm-msg {
-	font-size: 10px;
+	font-size: 12px;
 	color: white;
 	background-color: hsl(219, 85%, 26%);
-	padding: 2px 7px;
+	padding: 1px 8px;
 	border-radius: 4px;
 }
 .all-read {
 	cursor: pointer;
-	font-size: 10px;
+	font-size: 12px;
 	margin-left: auto;
 	border: none;
 	background-color: unset;
@@ -57,12 +57,12 @@ body {
 	content: "";
 	position: absolute;
 	display: block;
-	top: 0px;
-	right: -8px;
+	top: 3px;
+	right: -12px;
 	bottom: 0;
 	background-color: hsl(1, 90%, 64%);
-	width: 5px;
-	height: 5px;
+	width: 6px;
+	height: 6px;
 	border-radius: 50%;
 	margin: auto 0;
 }
@@ -72,7 +72,7 @@ body {
 	align-items: flex-start;
 	gap: 12px;
 
-	padding: 10px 14px;
+	padding: 12px 14px;
 	margin-bottom: 5px;
 	border-radius: 4px;
 	transition: all 0.2s ease-in;
@@ -84,7 +84,7 @@ body {
 }
 
 .main-line {
-	font-size: 10px;
+	font-size: 12px;
 	margin-bottom: 2px;
 	position: relative;
 }
@@ -96,7 +96,7 @@ body {
 } */
 .name {
 	margin-right: 2px;
-	font-size: 10px;
+	font-size: 12px;
 	display: inline;
 	cursor: pointer;
 	transition: all 0.2s ease-in;
@@ -115,7 +115,7 @@ body {
 
 .link a:link,
 .link a:visited {
-	font-size: 10.5px;
+	font-size: 12.8px;
 	font-weight: 800;
 	color: hsl(219, 12%, 50%);
 	text-decoration: none;
@@ -140,12 +140,12 @@ body {
 }
 .time-ago {
 	color: hsl(219, 12%, 75%);
-	font-size: 9px;
+	font-size: 11px;
 }
 
 .profile-photo {
-	width: 28px;
-	height: 28px;
+	width: 32px;
+	height: 32px;
 }
 
 .message {
@@ -153,7 +153,7 @@ body {
 	background-color: white;
 	border: 1px solid hsl(219, 12%, 90%);
 	padding: 12px;
-	font-size: 10px;
+	font-size: 12px;
 	color: hsl(219, 12%, 50%);
 	margin-top: 8px;
 	cursor: pointer;
@@ -165,16 +165,16 @@ body {
 }
 
 .photo {
-	width: 28px;
+	width: 36px;
 	margin-left: auto;
-	border-radius: 5px;
+	border-radius: 8px;
 	border: 2px solid hsla(211, 68%, 94%, 0);
 	cursor: pointer;
 	transition: all 0.2s ease-in;
 }
 
 .photo:hover {
-	border: 2px solid hsl(211, 68%, 94%);
+	border: 2px solid hsl(211, 68%, 80%);
 }
 
 @media (max-width: 500px) {
